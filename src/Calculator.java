@@ -17,14 +17,13 @@ public class Calculator {
             result = (double) number1 + number2;
         } else if (operator == '/') {
             if (number2 == 0) {
-                System.out.println("0으로는 나눌 수 없습니다.");
-            } else {
-                result = (double) number1 / number2;
-            }
-        }else{
-            throw new RuntimeException("잘못된 기호를 입력했습니다.");
-        }
+                throw new RuntimeException ("0으로는 나눌 수 없습니다.");
 
+            } else {
+
+                throw new RuntimeException("잘못된 기호를 입력했습니다.");
+            }
+        }
         resultList.add(result);
         return result;
     }
