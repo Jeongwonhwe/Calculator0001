@@ -19,8 +19,9 @@ public class Calculator {
             if (number2 == 0) {
                 System.out.println("0으로는 나눌 수 없습니다.");
             } else {
-                double result = (double) number1 / number2;
+                result = (double) number1 / number2;
             }
+        }else{
             throw new RuntimeException("잘못된 기호를 입력했습니다.");
         }
 
@@ -39,17 +40,4 @@ public class Calculator {
     public void deleteList() {
         resultList.remove(0);
     }
-
-    public void main() {
-
-        while (true) {
-            try {
-                double resurt = calculate(0, 1, 'z');
-            } catch (RuntimeException e) {
-                System.out.println(e.getMessage());
-                System.out.println("다시 입력해주세요");
-                continue;
             }
-        }
-    }
-}
