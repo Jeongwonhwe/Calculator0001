@@ -13,15 +13,17 @@ public class Main {
 
         String exit = "";
         while (!exit.equals("exit")) {
-            try {
-                System.out.println("첫 번째 숫자 입력");
-                number1 = sc.nextInt();
-                System.out.println("두 번쨰 숫자 입력");
-                number2 = sc.nextInt();
+
+            System.out.println("첫 번째 숫자 입력");
+            number1 = sc.nextInt();
+            System.out.println("두 번쨰 숫자 입력");
+            number2 = sc.nextInt();
+
 
                 System.out.println("연산 기호 입력");
                 operator = sc.next().charAt(0);
 
+            try {
                 double result = calculator01.calculate(number1, number2, operator);
                 System.out.println(result);
                 System.out.println("종료를 원하면 exit / 계속하려면 아무 글자 입력");
